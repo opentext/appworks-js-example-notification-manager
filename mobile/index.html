@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Notification Demo</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="appworks.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </head>
+  <body>
+
+    <div id="intro-wrapper">
+      <div id="intro">
+        <div style="font-weight:bold; text-align:center; margin-bottom:8px;">AppWorks Notifications Demo</div>
+        <p>This app demonstrates the use of the key features of the AWNotificationManager plugin</P>
+      </div>
+    </div>
+
+    <div id="content-wrapper">
+      <div><button type="button" id="go0-button" class="go-button vertical-space" onclick="getOpeningNotification();">Get Opening Notification</button></div>
+      <div><button type="button" id="go1-button" class="go-button vertical-space" onclick="getNotifications();">Get All Notifications</button></div>
+      <div><button type="button" id="go2-button" class="go-button vertical-space" onclick="enablePushNotifications();">Receive Notifications</button></div>
+      <div><button type="button" id="go3-button" class="go-button vertical-space" onclick="disablePushNotifications();">Stop Notifications</button></div>
+    </div>
+
+    <div id="notification-wrapper">
+      
+    </div>
+
+    <div id="result-wrapper">
+      <div id="result">
+
+      </div>
+    </div>
+
+    <div id="version">Version 0.0.1</div>
+  </body>
+</html>
